@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Veículos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Cadastro de Veículos</h1>
+        <form id="vehicle-form" class="row g-3">
+            <div class="col-md-6">
+                <label for="brand" class="form-label">Marca</label>
+                <input type="text" id="brand" class="form-control" placeholder="Marca" required>
+            </div>
+            <div class="col-md-6">
+                <label for="model" class="form-label">Modelo</label>
+                <input type="text" id="model" class="form-control" placeholder="Modelo" required>
+            </div>
+            <div class="col-md-6">
+                <label for="year" class="form-label">Ano</label>
+                <input type="number" id="year" class="form-control" placeholder="Ano" required>
+            </div>
+            <div class="col-md-6">
+                <label for="price" class="form-label">Preço</label>
+                <input type="number" id="price" class="form-control" placeholder="Preço" required>
+            </div>
+            <div class="col-12 text-center">
+                <button type="submit" class="btn btn-success">Adicionar Veículo</button>
+            </div>
+        </form>
+        <h2 class="mt-4 text-center">Veículos Cadastrados</h2>
+        <ul id="vehicle-list" class="list-group mt-3"></ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+    <script src="vehicleController.js"></script>
+    <script src="vehicleService.js"></script>
+</body>
+</html>
